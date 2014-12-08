@@ -22,6 +22,7 @@ exports.get = function (entryName) {
   var entryLoc = __dirname + "/fixtures/" + entryName;
 
   _.each(fs.readdirSync(entryLoc), function (suiteName) {
+    if (suiteName !== "es6-modules-system") return;
     if (suiteName[0] === ".") return;
 
     var suite = {
@@ -36,6 +37,7 @@ exports.get = function (entryName) {
     if (fs.existsSync(suiteOptsLoc)) suite.options = require(suiteOptsLoc);
 
     _.each(fs.readdirSync(suite.filename), function (taskName) {
+      if (taskName !== "exports-default") return;
       var taskDir = suite.filename + "/" + taskName;
       if (fs.statSync(taskDir).isFile()) return;
 

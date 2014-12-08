@@ -1,4 +1,5 @@
 --reporter dot
 --ui tdd
+--inline-diffs
 --check-leaks
 --globals regeneratorRuntime
