@@ -1,0 +1,488 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "System"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "register"
+          }
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "actual",
+            "raw": "\"actual\""
+          },
+          {
+            "type": "ArrayExpression",
+            "elements": []
+          },
+          {
+            "type": "FunctionExpression",
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "_export"
+              }
+            ],
+            "defaults": [],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "Literal",
+                    "value": "use strict",
+                    "raw": "\"use strict\""
+                  }
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "__moduleName"
+                      },
+                      "init": {
+                        "type": "Literal",
+                        "value": "actual",
+                        "raw": "\"actual\""
+                      }
+                    }
+                  ],
+                  "kind": "var"
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "foo"
+                      },
+                      "init": null
+                    }
+                  ],
+                  "kind": "var"
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "foo2"
+                      },
+                      "init": null
+                    }
+                  ],
+                  "kind": "var"
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "foo3"
+                      },
+                      "init": null
+                    }
+                  ],
+                  "kind": "var"
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "foo4"
+                      },
+                      "init": null
+                    }
+                  ],
+                  "kind": "var"
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "foo5"
+                      },
+                      "init": null
+                    }
+                  ],
+                  "kind": "var"
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "foo6"
+                      },
+                      "init": null
+                    }
+                  ],
+                  "kind": "var"
+                },
+                {
+                  "type": "FunctionDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "foo7"
+                  },
+                  "params": [],
+                  "defaults": [],
+                  "body": {
+                    "type": "BlockStatement",
+                    "body": []
+                  },
+                  "rest": null,
+                  "generator": false,
+                  "expression": false
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "_export"
+                    },
+                    "arguments": [
+                      {
+                        "type": "Literal",
+                        "value": "foo7",
+                        "raw": "\"foo7\""
+                      },
+                      {
+                        "type": "Identifier",
+                        "name": "foo7"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "foo8"
+                      },
+                      "init": null
+                    }
+                  ],
+                  "kind": "var"
+                },
+                {
+                  "type": "ReturnStatement",
+                  "argument": {
+                    "type": "ObjectExpression",
+                    "properties": [
+                      {
+                        "type": "Property",
+                        "key": {
+                          "type": "Identifier",
+                          "name": "setters"
+                        },
+                        "value": {
+                          "type": "ArrayExpression",
+                          "elements": []
+                        },
+                        "kind": "init"
+                      },
+                      {
+                        "type": "Property",
+                        "key": {
+                          "type": "Identifier",
+                          "name": "execute"
+                        },
+                        "value": {
+                          "type": "FunctionExpression",
+                          "id": null,
+                          "params": [],
+                          "defaults": [],
+                          "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                              {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "Identifier",
+                                    "name": "_export"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Literal",
+                                      "value": "foo",
+                                      "raw": "\"foo\""
+                                    },
+                                    {
+                                      "type": "AssignmentExpression",
+                                      "operator": "=",
+                                      "left": {
+                                        "type": "Identifier",
+                                        "name": "foo"
+                                      },
+                                      "right": {
+                                        "type": "Literal",
+                                        "value": 1,
+                                        "raw": "1"
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "Identifier",
+                                    "name": "_export"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Literal",
+                                      "value": "foo2",
+                                      "raw": "\"foo2\""
+                                    },
+                                    {
+                                      "type": "AssignmentExpression",
+                                      "operator": "=",
+                                      "left": {
+                                        "type": "Identifier",
+                                        "name": "foo2"
+                                      },
+                                      "right": {
+                                        "type": "FunctionExpression",
+                                        "id": null,
+                                        "params": [],
+                                        "defaults": [],
+                                        "body": {
+                                          "type": "BlockStatement",
+                                          "body": []
+                                        },
+                                        "rest": null,
+                                        "generator": false,
+                                        "expression": false
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "Identifier",
+                                    "name": "_export"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Literal",
+                                      "value": "foo3",
+                                      "raw": "\"foo3\""
+                                    },
+                                    {
+                                      "type": "Identifier",
+                                      "name": "foo3"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "Identifier",
+                                    "name": "_export"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Literal",
+                                      "value": "foo4",
+                                      "raw": "\"foo4\""
+                                    },
+                                    {
+                                      "type": "AssignmentExpression",
+                                      "operator": "=",
+                                      "left": {
+                                        "type": "Identifier",
+                                        "name": "foo4"
+                                      },
+                                      "right": {
+                                        "type": "Literal",
+                                        "value": 2,
+                                        "raw": "2"
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "Identifier",
+                                    "name": "_export"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Literal",
+                                      "value": "foo5",
+                                      "raw": "\"foo5\""
+                                    },
+                                    {
+                                      "type": "Identifier",
+                                      "name": "foo5"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "Identifier",
+                                    "name": "_export"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Literal",
+                                      "value": "foo6",
+                                      "raw": "\"foo6\""
+                                    },
+                                    {
+                                      "type": "AssignmentExpression",
+                                      "operator": "=",
+                                      "left": {
+                                        "type": "Identifier",
+                                        "name": "foo6"
+                                      },
+                                      "right": {
+                                        "type": "Literal",
+                                        "value": 3,
+                                        "raw": "3"
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "Identifier",
+                                    "name": "_export"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Literal",
+                                      "value": "foo7",
+                                      "raw": "\"foo7\""
+                                    },
+                                    {
+                                      "type": "Identifier",
+                                      "name": "foo7"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "Identifier",
+                                    "name": "_export"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Literal",
+                                      "value": "foo8",
+                                      "raw": "\"foo8\""
+                                    },
+                                    {
+                                      "type": "AssignmentExpression",
+                                      "operator": "=",
+                                      "left": {
+                                        "type": "Identifier",
+                                        "name": "foo8"
+                                      },
+                                      "right": {
+                                        "type": "FunctionExpression",
+                                        "id": {
+                                          "type": "Identifier",
+                                          "name": "foo8"
+                                        },
+                                        "params": [],
+                                        "defaults": [],
+                                        "body": {
+                                          "type": "BlockStatement",
+                                          "body": []
+                                        },
+                                        "rest": null,
+                                        "generator": false,
+                                        "expression": false
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          "rest": null,
+                          "generator": false,
+                          "expression": false
+                        },
+                        "kind": "init"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "rest": null,
+            "generator": false,
+            "expression": false
+          }
+        ]
+      }
+    }
+  ]
+}

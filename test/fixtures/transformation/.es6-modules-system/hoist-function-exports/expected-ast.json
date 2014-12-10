@@ -1,0 +1,382 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "System"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "register"
+          }
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "actual",
+            "raw": "\"actual\""
+          },
+          {
+            "type": "ArrayExpression",
+            "elements": [
+              {
+                "type": "Literal",
+                "value": "./evens",
+                "raw": "\"./evens\""
+              }
+            ]
+          },
+          {
+            "type": "FunctionExpression",
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "_export"
+              }
+            ],
+            "defaults": [],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "Literal",
+                    "value": "use strict",
+                    "raw": "\"use strict\""
+                  }
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "__moduleName"
+                      },
+                      "init": {
+                        "type": "Literal",
+                        "value": "actual",
+                        "raw": "\"actual\""
+                      }
+                    }
+                  ],
+                  "kind": "var"
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "isEven"
+                      },
+                      "init": null
+                    }
+                  ],
+                  "kind": "var"
+                },
+                {
+                  "type": "FunctionDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "nextOdd"
+                  },
+                  "params": [
+                    {
+                      "type": "Identifier",
+                      "name": "n"
+                    }
+                  ],
+                  "defaults": [],
+                  "body": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ReturnStatement",
+                        "argument": {
+                          "type": "ConditionalExpression",
+                          "test": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "Identifier",
+                              "name": "isEven"
+                            },
+                            "arguments": [
+                              {
+                                "type": "Identifier",
+                                "name": "n"
+                              }
+                            ]
+                          },
+                          "consequent": {
+                            "type": "BinaryExpression",
+                            "operator": "+",
+                            "left": {
+                              "type": "Identifier",
+                              "name": "n"
+                            },
+                            "right": {
+                              "type": "Literal",
+                              "value": 1,
+                              "raw": "1"
+                            }
+                          },
+                          "alternate": {
+                            "type": "BinaryExpression",
+                            "operator": "+",
+                            "left": {
+                              "type": "Identifier",
+                              "name": "n"
+                            },
+                            "right": {
+                              "type": "Literal",
+                              "value": 2,
+                              "raw": "2"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "rest": null,
+                  "generator": false,
+                  "expression": false
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "_export"
+                    },
+                    "arguments": [
+                      {
+                        "type": "Literal",
+                        "value": "nextOdd",
+                        "raw": "\"nextOdd\""
+                      },
+                      {
+                        "type": "Identifier",
+                        "name": "nextOdd"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "isOdd"
+                      },
+                      "init": null
+                    }
+                  ],
+                  "kind": "var"
+                },
+                {
+                  "type": "ReturnStatement",
+                  "argument": {
+                    "type": "ObjectExpression",
+                    "properties": [
+                      {
+                        "type": "Property",
+                        "key": {
+                          "type": "Identifier",
+                          "name": "setters"
+                        },
+                        "value": {
+                          "type": "ArrayExpression",
+                          "elements": [
+                            {
+                              "type": "FunctionExpression",
+                              "id": null,
+                              "params": [
+                                {
+                                  "type": "Identifier",
+                                  "name": "m"
+                                }
+                              ],
+                              "defaults": [],
+                              "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                  {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                      "type": "AssignmentExpression",
+                                      "operator": "=",
+                                      "left": {
+                                        "type": "Identifier",
+                                        "name": "isEven"
+                                      },
+                                      "right": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "m"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "isEven"
+                                        }
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              "rest": null,
+                              "generator": false,
+                              "expression": false
+                            }
+                          ]
+                        },
+                        "kind": "init"
+                      },
+                      {
+                        "type": "Property",
+                        "key": {
+                          "type": "Identifier",
+                          "name": "execute"
+                        },
+                        "value": {
+                          "type": "FunctionExpression",
+                          "id": null,
+                          "params": [],
+                          "defaults": [],
+                          "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                              {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "Identifier",
+                                    "name": "_export"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Literal",
+                                      "value": "isOdd",
+                                      "raw": "\"isOdd\""
+                                    },
+                                    {
+                                      "type": "AssignmentExpression",
+                                      "operator": "=",
+                                      "left": {
+                                        "type": "Identifier",
+                                        "name": "isOdd"
+                                      },
+                                      "right": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                          "type": "FunctionExpression",
+                                          "id": null,
+                                          "params": [
+                                            {
+                                              "type": "Identifier",
+                                              "name": "isEven"
+                                            }
+                                          ],
+                                          "defaults": [],
+                                          "body": {
+                                            "type": "BlockStatement",
+                                            "body": [
+                                              {
+                                                "type": "ReturnStatement",
+                                                "argument": {
+                                                  "type": "FunctionExpression",
+                                                  "id": null,
+                                                  "params": [
+                                                    {
+                                                      "type": "Identifier",
+                                                      "name": "n"
+                                                    }
+                                                  ],
+                                                  "defaults": [],
+                                                  "body": {
+                                                    "type": "BlockStatement",
+                                                    "body": [
+                                                      {
+                                                        "type": "ReturnStatement",
+                                                        "argument": {
+                                                          "type": "UnaryExpression",
+                                                          "operator": "!",
+                                                          "argument": {
+                                                            "type": "CallExpression",
+                                                            "callee": {
+                                                              "type": "Identifier",
+                                                              "name": "isEven"
+                                                            },
+                                                            "arguments": [
+                                                              {
+                                                                "type": "Identifier",
+                                                                "name": "n"
+                                                              }
+                                                            ]
+                                                          },
+                                                          "prefix": true
+                                                        }
+                                                      }
+                                                    ]
+                                                  },
+                                                  "rest": null,
+                                                  "generator": false,
+                                                  "expression": false
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          "rest": null,
+                                          "generator": false,
+                                          "expression": false
+                                        },
+                                        "arguments": [
+                                          {
+                                            "type": "Identifier",
+                                            "name": "isEven"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          "rest": null,
+                          "generator": false,
+                          "expression": false
+                        },
+                        "kind": "init"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "rest": null,
+            "generator": false,
+            "expression": false
+          }
+        ]
+      }
+    }
+  ]
+}

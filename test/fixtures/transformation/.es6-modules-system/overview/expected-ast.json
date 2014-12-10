@@ -1,0 +1,359 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "System"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "register"
+          }
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "actual",
+            "raw": "\"actual\""
+          },
+          {
+            "type": "ArrayExpression",
+            "elements": [
+              {
+                "type": "Literal",
+                "value": "foo",
+                "raw": "\"foo\""
+              },
+              {
+                "type": "Literal",
+                "value": "foo-bar",
+                "raw": "\"foo-bar\""
+              },
+              {
+                "type": "Literal",
+                "value": "./directory/foo-bar",
+                "raw": "\"./directory/foo-bar\""
+              }
+            ]
+          },
+          {
+            "type": "FunctionExpression",
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "_export"
+              }
+            ],
+            "defaults": [],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "Literal",
+                    "value": "use strict",
+                    "raw": "\"use strict\""
+                  }
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "__moduleName"
+                      },
+                      "init": {
+                        "type": "Literal",
+                        "value": "actual",
+                        "raw": "\"actual\""
+                      }
+                    }
+                  ],
+                  "kind": "var"
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "foo"
+                      },
+                      "init": null
+                    },
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "bar"
+                      },
+                      "init": null
+                    }
+                  ],
+                  "kind": "var"
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "test"
+                      },
+                      "init": null
+                    }
+                  ],
+                  "kind": "var"
+                },
+                {
+                  "type": "ReturnStatement",
+                  "argument": {
+                    "type": "ObjectExpression",
+                    "properties": [
+                      {
+                        "type": "Property",
+                        "key": {
+                          "type": "Identifier",
+                          "name": "setters"
+                        },
+                        "value": {
+                          "type": "ArrayExpression",
+                          "elements": [
+                            {
+                              "type": "FunctionExpression",
+                              "id": null,
+                              "params": [
+                                {
+                                  "type": "Identifier",
+                                  "name": "m"
+                                }
+                              ],
+                              "defaults": [],
+                              "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                  {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                      "type": "AssignmentExpression",
+                                      "operator": "=",
+                                      "left": {
+                                        "type": "Identifier",
+                                        "name": "foo"
+                                      },
+                                      "right": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "m"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "default"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                      "type": "AssignmentExpression",
+                                      "operator": "=",
+                                      "left": {
+                                        "type": "Identifier",
+                                        "name": "foo"
+                                      },
+                                      "right": {
+                                        "type": "Identifier",
+                                        "name": "m"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                      "type": "AssignmentExpression",
+                                      "operator": "=",
+                                      "left": {
+                                        "type": "Identifier",
+                                        "name": "bar"
+                                      },
+                                      "right": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "m"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "bar"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                      "type": "AssignmentExpression",
+                                      "operator": "=",
+                                      "left": {
+                                        "type": "Identifier",
+                                        "name": "bar"
+                                      },
+                                      "right": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "m"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "foo"
+                                        }
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              "rest": null,
+                              "generator": false,
+                              "expression": false
+                            },
+                            {
+                              "type": "Literal",
+                              "value": null,
+                              "raw": "null"
+                            },
+                            {
+                              "type": "Literal",
+                              "value": null,
+                              "raw": "null"
+                            }
+                          ]
+                        },
+                        "kind": "init"
+                      },
+                      {
+                        "type": "Property",
+                        "key": {
+                          "type": "Identifier",
+                          "name": "execute"
+                        },
+                        "value": {
+                          "type": "FunctionExpression",
+                          "id": null,
+                          "params": [],
+                          "defaults": [],
+                          "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                              {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "Identifier",
+                                    "name": "_export"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Literal",
+                                      "value": "test",
+                                      "raw": "\"test\""
+                                    },
+                                    {
+                                      "type": "Identifier",
+                                      "name": "test"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "Identifier",
+                                    "name": "_export"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Literal",
+                                      "value": "test",
+                                      "raw": "\"test\""
+                                    },
+                                    {
+                                      "type": "AssignmentExpression",
+                                      "operator": "=",
+                                      "left": {
+                                        "type": "Identifier",
+                                        "name": "test"
+                                      },
+                                      "right": {
+                                        "type": "Literal",
+                                        "value": 5,
+                                        "raw": "5"
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "Identifier",
+                                    "name": "_export"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Literal",
+                                      "value": "default",
+                                      "raw": "\"default\""
+                                    },
+                                    {
+                                      "type": "Identifier",
+                                      "name": "test"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          "rest": null,
+                          "generator": false,
+                          "expression": false
+                        },
+                        "kind": "init"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "rest": null,
+            "generator": false,
+            "expression": false
+          }
+        ]
+      }
+    }
+  ]
+}
