@@ -37,7 +37,6 @@ exports.get = function (entryName) {
     if (fs.existsSync(suiteOptsLoc)) suite.options = require(suiteOptsLoc);
 
     _.each(fs.readdirSync(suite.filename), function (taskName) {
-      if (taskName !== "exports-default") return;
       var taskDir = suite.filename + "/" + taskName;
       if (fs.statSync(taskDir).isFile()) return;
 
